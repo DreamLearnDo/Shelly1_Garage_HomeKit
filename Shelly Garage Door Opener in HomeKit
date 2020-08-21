@@ -1,7 +1,7 @@
 binary_sensor:
   - platform: mqtt
     name: "Garage Door Status"
-    state_topic: "shellies/shelly1-BCDDC2778673/input/0"
+    state_topic: "shellies/shelly1-xxxxxxxxxxx/input/0"
     payload_on: "0"
     payload_off: "1"
     
@@ -21,8 +21,8 @@ cover:
         open_cover:
           service: switch.turn_on
           data:
-            entity_id: switch.shelly_shsw_1_BCDDC2778673
+            entity_id: switch.shelly_shsw_1_xxxxxxxxxxx
         close_cover:
           service: switch.turn_on
           data:
-            entity_id: switch.shelly_shsw_1_BCDDC2778673
+            entity_id: switch.shelly_shsw_1_xxxxxxxxxxx
